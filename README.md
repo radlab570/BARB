@@ -44,3 +44,14 @@ PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engi
 19. Save the project in Unreal.
 20. Click the green play button to run the level.
 21. Run the **Google ARCore** app on your phone.  The information from the phone will be sent to Unreal, and the **PlayerStart** will move around and rotate as the phone does.
+
+
+# Android Phone Implementation
+1. Install Android Studio (Windows install)
+2. Install Google ARCore (git clone operation)
+3. Install Google Pixel USB drivers from within Android Studio
+   - tools -> sdk manager -> android sdk ... make sure to check "usb debugging"
+4. Within the Android project, you have to make the following addition to androidmanifest.xml:
+   - <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.google.ar.core.examples.java.helloar">
