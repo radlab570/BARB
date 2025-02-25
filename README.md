@@ -52,6 +52,6 @@ PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engi
 3. Install Google Pixel USB drivers from within Android Studio
    - tools -> sdk manager -> android sdk ... make sure to check "usb debugging"
 4. Within the Android project, you have to make the following addition to androidmanifest.xml:
-   - <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+   - <manifest \xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.google.ar.core.examples.java.helloar">
